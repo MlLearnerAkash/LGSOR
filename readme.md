@@ -8,7 +8,15 @@ Download the pretrained model weights from [OneDrive](https://1drv.ms/f/c/5ceac4
 
 - **Model File**: `checkpoint/assr_swinl/model.pth`
 - **Model File**: `checkpoint/irsr_swinl/model.pth`
-- **Config File**: `configs/coco/instance-segmentation/swin/maskformer2_swin_large_IN21k_384_bs16_100ep_assr.yaml`
+<!-- - **Config File**: `configs/coco/instance-segmentation/swin/maskformer2_swin_large_IN21k_384_bs16_100ep_assr.yaml` -->
+
+### Data
+
+You can download the datasets from their official repositories:
+- **ASSR**: [Attention_Shift_Ranks](https://github.com/SirisAvishek/Attention_Shift_Ranks/blob/master/Attention_Shift_Saliency_Rank/README.md)
+- **IRSR**: [Saliency-Ranking](https://github.com/dragonlee258079/Saliency-Ranking)
+
+Alternatively, we also provide the required data on [OneDrive](https://1drv.ms/f/c/5ceac445cfe98955/IgCaqkqrA474TYlXWTHDesPRAfVthRooie_F9HnfpMaJ7NQ?e=KB72bT) for easy reproduction. Download and extract the data, then place it under the `data/` directory.
 
 ## Running Inference
 
