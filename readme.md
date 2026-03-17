@@ -3,6 +3,9 @@
 ## Model Location
 
 ### Trained Model Weights
+
+Download the pretrained model weights from [OneDrive](https://1drv.ms/f/c/5ceac445cfe98955/IgDwlrru-VXnTqJpnX98X9b6Ad9zn2VMO1jHkFb30vxhTi0?e=sLaVlx) and place them in the corresponding directories:
+
 - **Model File**: `checkpoint/assr_swinl/model.pth`
 - **Model File**: `checkpoint/irsr_swinl/model.pth`
 - **Config File**: `configs/coco/instance-segmentation/swin/maskformer2_swin_large_IN21k_384_bs16_100ep_assr.yaml`
@@ -39,6 +42,8 @@ After inference is complete, run the evaluation script:
 python metric.py --map output/assr_swinl/model/ResultThres
 ```
 
+We also provide our pre-computed prediction results for direct evaluation. Download from [OneDrive](https://1drv.ms/f/c/5ceac445cfe98955/IgBLCBuVCihvQLgDur-HBnlzAW4WFJfMum7FFQciDQQsH28?e=x4NZqN) and evaluate using the same script above.
+
 ## Notes
 
 1. Ensure sufficient GPU memory (recommended >= 16GB)
@@ -54,7 +59,7 @@ python metric.py --map output/assr_swinl/model/ResultThres
 
 ```
 @inproceedings{liu2025language,
-  title={Language-Guided Salient Object Ranking},
+  title={Language-guided salient object ranking},
   author={Liu, Fang and Liu, Yuhao and Xu, Ke and Ye, Shuquan and Hancke, Gerhard Petrus and Lau, Rynson WH},
   booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
   pages={29803--29813},
