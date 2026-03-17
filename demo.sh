@@ -5,5 +5,5 @@ python main.py --num-gpus 1  --config-file configs/coco/instance-segmentation/sw
     EVALUATION.MODEL_DIR "checkpoint/assr_swinl/" \
     EVALUATION.MODEL_NAMES "('model.pth', )" 
 
-python metric.py --map checkpoint/assr_swinl/model/ResultThres
+# python metric.py --map checkpoint/assr_swinl/model/ResultThres
 

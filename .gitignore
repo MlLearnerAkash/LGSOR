@@ -36,7 +36,8 @@ wheels/
 .vscode
 
 
-checkpoint/
+checkpoint/assr_swinl/*
+checkpoint/irsr_swinl/*
 output/*
 data/ASSR/*
 data/IRSR/*
