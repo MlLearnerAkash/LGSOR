@@ -41,3 +41,5 @@ checkpoint/irsr_swinl/*
 output/*
 data/ASSR/*
 data/IRSR/*
+
+*/.DS_Store
