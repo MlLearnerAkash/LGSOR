@@ -1,5 +1,5 @@
 *.png
-*.json
+# *.json
 *.diff
 *.jpg
 
@@ -37,6 +37,6 @@ wheels/
 
 
 checkpoint/
-output/
-data/ASSR/
-data/IRSR/
+output/*
+data/ASSR/*
+data/IRSR/*

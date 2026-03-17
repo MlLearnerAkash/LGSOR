@@ -269,13 +269,12 @@ if __name__=="__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--map", "--m", "-m", type=str, default=None)
     parser.add_argument("--irsr", type=bool, default=False)
-    parser.add_argument("--gt", type=str, default="/mnt1/rank/data/ASSR/gt/test/")  # /mnt1/rank/data/IRSR/Images/test/gt
+    parser.add_argument("--gt", type=str, default="./data/ASSR/gt/test/")  
     parser.add_argument("--threshold", type=float, default=0.5)
 
     args = parser.parse_args()
 
     if args.irsr:
-        # args.gt = '/mnt1/rank/data/IRSR/Images/test/gt'
         args.gt = './data/IRSR/gt_irsr/final_gray'
 
     def decompose(m, ignore=[0]):   
@@ -291,7 +290,8 @@ if __name__=="__main__":
     input_path = args.map
     gt = args.gt 
 
-    print(input_path, gt, '===', f'threshold: {args.threshold}')
+    # print(input_path, gt)
+    print(f'input_path: {input_path}\n\tgt: {gt}')
     
     names = [x for x in os.listdir(gt) if x.endswith(".png")]
     results = []
